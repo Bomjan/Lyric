@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyrics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Bomjan Lyrics</h1>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search your lyrics"
+      />
+      <div class="liked"><i class="fa-regular fa-heart"></i></div>
+      <div class="library"><i class="fa-solid fa-music"></i></div>
+    </header>
+    <main>
+      <div class="meta">
+        <h1 class="song-title">Dive</h1>
+        <h2 class="artist-name">Ed Sheeran</h2>
+        <img src="dive.webp" alt="Photo" />
+        <h2 class="key">Key: <span id="key">E maj</span></h2>
+      </div>
+      <div class="lyric-container">
+        <h2 class="song-title" id="song-title">Dive | Ed Sheeran</h2>
+        <div class="lyric-box"></div>
+      </div>
+      <div class="chord-container">
+        <div class="chords">
+          <div class="current-chord">
+            <img src="c-chord.webp" alt="current" />
+          </div>
+          <div class="next-chord">
+            <img src="c-chord.webp" alt="next" />
+          </div>
+        </div>
+        <div class="current-chord-name">F#</div>
+      </div>
+    </main>
+  </body>
+</html>
