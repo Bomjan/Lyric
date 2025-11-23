@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lyrics</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Bomjan Lyrics - A professional lyrics and chord viewer for guitarists and singers" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -20,13 +27,13 @@
         placeholder="Search your lyrics"
       />
       <div class="liked"><i class="fa-regular fa-heart"></i></div>
-      <div class="library"><i class="fa-solid fa-music"></i></div>
+      <div class="library" title="Song Library (L)"><i class="fa-solid fa-music"></i></div>
     </header>
     <main>
       <div class="meta">
         <h1 class="song-title">Dive</h1>
         <h2 class="artist-name">Ed Sheeran</h2>
-        <img src="dive.webp" alt="Photo" />
+        <img src="images/dive.webp" alt="Photo" />
         <h2 class="key">Key: <span id="key">E maj</span></h2>
       </div>
       <div class="lyric-container">
@@ -36,14 +43,18 @@
       <div class="chord-container">
         <div class="chords">
           <div class="current-chord">
-            <img src="c-chord.webp" alt="current" />
+            <img src="images/c-chord.webp" alt="current" />
           </div>
           <div class="next-chord">
-            <img src="c-chord.webp" alt="next" />
+            <img src="images/c-chord.webp" alt="next" />
           </div>
         </div>
         <div class="current-chord-name">F#</div>
       </div>
     </main>
+    
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
