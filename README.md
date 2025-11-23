@@ -150,7 +150,7 @@ Example: `[0, 3, 2, 0, 1, 0]` = C major chord
 Piano chords are represented as an array of note names:
 Example: `["C", "E", "G"]` = C major triad
 
-## 🛠️ Customization
+## Customization
 
 ### Changing Colors
 Edit `css/style.css` and modify these CSS variables:
