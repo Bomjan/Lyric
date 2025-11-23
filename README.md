@@ -4,6 +4,12 @@ A professional, feature-rich lyrics and chord viewer designed specifically for g
 
 ![Screenshot](images/screenshot.png)
 
+## About This Project
+
+This is a personal use application designed to help you manage your own lyrics and chords collection. Currently, songs are stored locally in a JSON file (`data/songs.json`), making it easy to add and organize your personal repertoire.
+
+**Future Development**: The app is being designed with backend integration in mind. In future versions, lyrics and chords will be fetched from a database through API endpoints, enabling features like cloud synchronization, collaborative editing, and a larger song library.
+
 ## Features
 
 ### Core Functionality
