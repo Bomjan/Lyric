@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #183d3a;
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .meta img {
-  width: calc(100% - 35px);
+  width: 100%;
+  max-width: 300px;
   margin-top: 10px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -21,7 +21,7 @@
 
 .meta h1,
 .meta h2 {
-  margin: 20px;
+  margin: 12px 0;
   text-align: center;
 }
 
@@ -43,12 +43,7 @@
 }
 
 @media (max-width: 900px) {
-  .meta {
-    padding: 15px;
-  }
-
   .meta img {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
   }
 }

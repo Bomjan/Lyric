@@ -1,0 +1,134 @@
+.controls {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(42, 165, 156, 0.2);
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 12px;
+}
+
+.header h3 {
+  font-size: 1.1rem;
+  color: #2aa59c;
+  font-weight: 600;
+}
+
+.playButton {
+  width: 100%;
+  background: linear-gradient(135deg, #2aa59c, #147171);
+  color: #f3f8f7;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.playButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 165, 156, 0.3);
+}
+
+.playButton:active {
+  transform: translateY(0);
+}
+
+.speedControl {
+  margin-bottom: 12px;
+}
+
+.speedControl label {
+  display: block;
+  font-size: 0.9rem;
+  color: #8ff5e2;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(42, 165, 156, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2aa59c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #58d1c8;
+  transform: scale(1.1);
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2aa59c;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+  background: #58d1c8;
+  transform: scale(1.1);
+}
+
+.presets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.presetBtn {
+  background: rgba(42, 165, 156, 0.1);
+  border: 1px solid rgba(42, 165, 156, 0.3);
+  color: #8ff5e2;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.presetBtn:hover {
+  background: rgba(42, 165, 156, 0.2);
+  border-color: rgba(42, 165, 156, 0.5);
+}
+
+.presetBtn.active {
+  background: #2aa59c;
+  color: #111717;
+  border-color: #2aa59c;
+  font-weight: 600;
+}
+
+.hint {
+  text-align: center;
+  color: #476a67;
+  font-size: 0.8rem;
+}

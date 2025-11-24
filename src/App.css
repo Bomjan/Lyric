@@ -11,6 +11,11 @@ main {
   grid-template-columns: 2fr 4fr 3fr;
 }
 
+.meta-section {
+  padding: 20px;
+  overflow-y: auto;
+}
+
 @media (max-width: 1200px) {
   main {
     grid-template-columns: 1fr 2fr 1.5fr;
@@ -21,5 +26,9 @@ main {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+  }
+  
+  .meta-section {
+    padding: 15px;
   }
 }
