@@ -1,0 +1,85 @@
+.lyricContainer {
+  background-color: #1a2323;
+  padding: 24px;
+  font-size: 19px;
+  line-height: 1.7;
+  overflow-y: auto;
+}
+
+.songTitle {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #2aa59c;
+  text-align: center;
+}
+
+.lyricBox {
+  border: 0.5px solid rgb(14, 43, 39);
+  border-radius: 14px;
+  height: 75vh;
+  width: calc(100% - 50px);
+  overflow-y: scroll;
+  padding: 24px;
+}
+
+.lyricBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.lyricBox::-webkit-scrollbar-track {
+  background: #101616;
+  border-radius: 10px;
+}
+
+.lyricBox::-webkit-scrollbar-thumb {
+  background: #2aa59c;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.lyricBox::-webkit-scrollbar-thumb:hover {
+  background: #58d1c8;
+}
+
+.lyricLine {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.lyricLine:hover {
+  background-color: rgba(42, 165, 156, 0.1);
+}
+
+.lyricLine.active {
+  background-color: rgba(42, 165, 156, 0.2);
+  color: #8ff5e2;
+  font-weight: 500;
+  transform: translateX(8px);
+  border-left: 3px solid #2aa59c;
+}
+
+.chordIndicator {
+  display: inline-block;
+  background-color: #2aa59c;
+  color: #111717;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+  .lyricContainer {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .lyricBox {
+    padding: 16px;
+  }
+}

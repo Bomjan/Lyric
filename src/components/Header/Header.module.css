@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #2aa59c, #147171);
+  color: #e4d66a;
+  height: 65px;
+  width: 100%;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  user-select: none;
+  cursor: pointer;
+  margin-left: 18px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.header h1:hover {
+  transform: scale(1.05);
+}
+
+.header input {
+  width: 400px;
+  padding: 12px 18px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #1a4f4d;
+  color: #e7ffe4;
+  transition: all 0.3s ease;
+}
+
+.header input:focus {
+  background-color: #1f5e5b;
+  box-shadow: 0 0 0 3px rgba(42, 165, 156, 0.3);
+}
+
+.header input::placeholder {
+  color: #8ff5e2;
+}
+
+.header div {
+  padding: 14px;
+  background-color: #1f5e5b;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.header div:hover {
+  background-color: #2aa59c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 165, 156, 0.3);
+}
+
+.header div:active {
+  transform: translateY(0);
+}
+
+.liked {
+  margin-right: 12px;
+}
+
+.library {
+  margin-right: 22px;
+}
+
+@media (max-width: 1200px) {
+  .header input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header input {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.2rem;
+    margin-left: 12px;
+  }
+
+  .header input {
+    width: 150px;
+    padding: 10px 14px;
+  }
+
+  .header div {
+    padding: 10px;
+  }
+
+  .liked,
+  .library {
+    margin-right: 8px;
+  }
+}

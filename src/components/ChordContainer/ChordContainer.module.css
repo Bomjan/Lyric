@@ -1,0 +1,93 @@
+.chordContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111717;
+  padding-top: 20px;
+}
+
+.chords {
+  position: relative;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentChord {
+  background-color: #8adeb3;
+  border-radius: 22px;
+  padding: 18px;
+  z-index: 2;
+  transform: translateX(30px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.currentChord:hover {
+  transform: translateX(30px) scale(1.02);
+}
+
+.currentChord img {
+  width: 330px;
+  height: 330px;
+  border-radius: 14px;
+}
+
+.nextChord {
+  background-color: #476a67;
+  border-radius: 20px;
+  padding: 12px;
+  opacity: 0.55;
+  transform: translateX(10px) scale(0.75) rotate(-10deg);
+  filter: blur(0.5px);
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.nextChord img {
+  width: 210px;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.currentChordName {
+  text-align: center;
+  background-color: #2aa59c;
+  color: #111717;
+  padding: 18px 70px;
+  border-radius: 14px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 25px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.currentChordName:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .chordContainer {
+    padding: 20px;
+  }
+
+  .currentChord img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nextChord {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .currentChordName {
+    padding: 12px 40px;
+    font-size: 20px;
+  }
+}

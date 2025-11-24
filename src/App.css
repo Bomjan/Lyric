@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+}
+
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 2fr 1.5fr;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
