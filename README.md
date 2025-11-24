@@ -11,6 +11,8 @@ A professional, feature-rich lyrics and chord viewer designed specifically for g
 - **Interactive Chord Diagrams** - Visual guitar chord representations
 - **Auto-Scroll** - Automatic lyric scrolling with adjustable speed
 - **Chord Indicators** - See which chord plays with each lyric line
+- **Song Transpose** - Change key up/down by semitones to match your vocal range
+- **Playback Speed Control** - Adjust auto-scroll speed from 0.5x to 2x with visual controls
 
 ### Song Management
 - **Powerful Search** - Search by song title, artist, or tags
@@ -28,6 +30,7 @@ A professional, feature-rich lyrics and chord viewer designed specifically for g
 ### Modern UI/UX
 - **Glassmorphism Design** - Modern, sleek interface with backdrop blur
 - **Smooth Animations** - Polished transitions and micro-interactions
+- **Toast Notifications** - Instant visual feedback for all actions
 - **Responsive Layout** - Works perfectly on desktop, tablet, and mobile
 - **Dark Theme** - Easy on the eyes for long practice sessions
 - **CSS Modules** - Scoped styling with no conflicts
@@ -50,10 +53,14 @@ src/
 │   ├── LyricContainer/ # Auto-scrolling lyrics
 │   ├── ChordContainer/ # Chord diagrams
 │   ├── LibraryModal/   # Song selection modal
-│   └── SongCard/       # Individual song cards
+│   ├── SongCard/       # Individual song cards
+│   ├── PlaybackControls/ # Speed and playback controls
+│   ├── TransposeControl/ # Key transposition controls
+│   └── Toast/          # Notification system
 ├── data/               # Song data (TypeScript)
 ├── hooks/              # Custom React hooks
 ├── types/              # TypeScript type definitions
+├── utils/              # Utility functions (transpose, etc.)
 ├── assets/             # Images and static files
 ├── App.tsx             # Main application component
 ├── App.css             # App-specific styles

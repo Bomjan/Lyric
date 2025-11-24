@@ -12,6 +12,7 @@ main {
 }
 
 .meta-section {
+  background-color: #183d3a;
   padding: 20px;
   overflow-y: auto;
 }
